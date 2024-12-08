@@ -113,6 +113,8 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
+
+
   // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
@@ -159,8 +161,16 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
+
+  //add sign up nav
+  const signupnav = document.createElement('div');
+  signupnav.className = 'sign-up-nav';
+  signupnav.innerHTML = `<span  class="sign-up-link"><a href='/registration'>Sign Up</a></span>`;
+  navWrapper.append(signupnav);
+
   navWrapper.append(nav);
   block.append(navWrapper);
 }
