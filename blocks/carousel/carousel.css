@@ -130,9 +130,6 @@
 }
 
 @media (width >=600px) {
-    .carousel .carousel-navigation-buttons {
-        
-    }
 
     .carousel .carousel-slide .carousel-slide-content {
         --slide-content-width: calc((100% - 184px) / 2);

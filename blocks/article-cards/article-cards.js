@@ -1,16 +1,15 @@
-
 async function getCardlist(articalURL) {
+    let articleData = [];
     try {
         const response = await fetch(articalURL);
         const jsonData = await response.json();
         const articles = jsonData.data.filter((data) => data.path.startsWith('/magazine/'));
-        return articles;
+        articleData = articles;
     } catch (error) {
         console.error('Error fetching JSON:', error)
     }
+    return articleData;
 }
-
-
 
 export default async function decorate(block) {
     const articles = block.querySelector('a[href$=".json"]');
@@ -50,5 +49,4 @@ export default async function decorate(block) {
 
     block.textContent = '';
     block.appendChild(ul);
-
 }
