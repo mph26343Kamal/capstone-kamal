@@ -1,0 +1,49 @@
+.about-us-cards>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
+}
+
+.about-us-cards>ul>li {
+    background-color: var(--background-color);
+    padding-top: 30px;
+}
+
+.about-us-cards .about-us-card {
+    margin: 16px;
+    text-align: center;
+}
+
+.about-us-cards .about-us-card-image {
+    line-height: 0;
+    text-align: center;
+}
+
+.about-us-cards>ul>li>.about-us-card-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 164px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 164px;
+}
+
+.about-us-cards img {
+    text-align: center;
+}
+
+.about-us-cards p .icon {
+    background-color: var(--brand-secondary);
+    padding: 10px;
+    color: var(--light-color);
+}
+
+
+.about-us-cards p .icon img {
+    background-color: var(--light-color);
+}

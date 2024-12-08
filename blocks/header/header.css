@@ -6,6 +6,8 @@ header .nav-wrapper {
   position: fixed;
 }
 
+
+
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -30,6 +32,7 @@ header nav[aria-expanded='true'] {
   min-height: 100dvh;
 }
 
+
 @media (width >= 900px) {
   header nav {
     display: flex;
@@ -42,6 +45,7 @@ header nav[aria-expanded='true'] {
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
+    position: relative;
   }
 }
 
@@ -158,9 +162,9 @@ header nav .nav-sections {
 }
 
 header nav[aria-expanded='true'] .nav-sections {
-  display: block;
   visibility: visible;
-  align-self: start;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header nav .nav-sections ul {
@@ -220,7 +224,6 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
     margin: 0;
   }
 
@@ -265,4 +268,74 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+.default-content-wrapper > ul >  li a{
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid transparent;
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.default-content-wrapper > ul >  li a:active{
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid transparent;
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--brand-primary);
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.default-content-wrapper > ul >  li a:hover{
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid transparent;
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--brand-primary);
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sign-up-nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: var(--dark-background-color);
+  min-height: 25px;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+  font-size: var(--body-font-size-xs);
+}
+.sign-up-link{
+  margin: 0 60px;
 }
