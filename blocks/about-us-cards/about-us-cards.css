@@ -22,19 +22,20 @@
   text-align: center;
 }
 
-.about-us-cards > ul > li > .about-us-card-image img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 50%;
-  height: 164px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 164px;
-}
-
 .about-us-cards img {
   text-align: center;
+}
+
+.about-us-cards p .icon img {
+  background-color: var(--light-color);
+}
+
+.about-us-cards > ul > li > .about-us-card-image img {
+  aspect-ratio: 4 / 3;
+  border-radius: 50%;
+  height: 164px;
+  object-fit: cover;
+  width: 164px;
 }
 
 .about-us-cards p .icon {
@@ -43,6 +44,3 @@
   color: var(--light-color);
 }
 
-.about-us-cards p .icon img {
-  background-color: var(--light-color);
-}

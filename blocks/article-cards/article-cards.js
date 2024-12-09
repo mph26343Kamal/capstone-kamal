@@ -6,6 +6,7 @@ async function getCardlist(articalURL) {
     const articles = jsonData.data.filter((data) => data.path.startsWith('/magazine/'));
     articleData = articles;
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Error fetching JSON:', error);
   }
   return articleData;

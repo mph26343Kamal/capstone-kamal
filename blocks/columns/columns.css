@@ -28,12 +28,9 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: flex;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap;
     margin-bottom: 1em;
     width: 100%;
   }

@@ -35,17 +35,6 @@
   height: 100%;
 }
 
-.card-link:hover h3,
-.card-link:hover p {
-  text-decoration: none;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
 .card h3 {
   font-size: 1.2rem;
   margin: 12px 0 8px;
@@ -58,13 +47,26 @@
   padding: 0 12px 12px;
 }
 
-@media (max-width: 768px) {
+.card-link:hover h3,
+.card-link:hover p {
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+@media (width <= 768px) {
   .card {
     width: calc(100% / 2 - 16px);
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .card {
     width: 100%;
   }

@@ -290,6 +290,7 @@ header nav .nav-tools {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .default-content-wrapper > ul > li a:active {
   box-sizing: border-box;
   display: inline-block;
@@ -339,6 +340,7 @@ header nav .nav-tools {
   margin-bottom: 1rem;
   font-size: var(--body-font-size-xs);
 }
+
 .sign-up-link {
   margin: 0 60px;
 }

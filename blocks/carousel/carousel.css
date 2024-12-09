@@ -53,8 +53,9 @@
 
 .carousel .carousel-slide .carousel-slide-content {
   z-index: 1;
-  margin: 68px auto 0 auto;
+  margin: 68px auto 0;
   padding: 16px;
+
   /* color: white; */
   background-color: rgba(255 255 255 / 50%);
   position: relative;
@@ -129,11 +130,12 @@
   left: calc(50% - 2px);
 }
 
-/*media style*/
+/* media style */
 @media (width >=600px) {
   .carousel .carousel-slide .carousel-slide-content {
     --slide-content-width: calc((100% - 184px) / 2);
-    margin: 92px auto -15px auto;
+
+    margin: 92px auto -15px;
   }
 
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
