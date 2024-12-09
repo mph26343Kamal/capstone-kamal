@@ -30,6 +30,10 @@ header nav[aria-expanded='true'] {
   min-height: 100dvh;
 }
 
+.search-input {
+  display: none;
+}
+
 @media (width >= 900px) {
   header nav {
     display: flex;
@@ -133,6 +137,20 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   header nav .nav-hamburger {
     display: none;
     visibility: hidden;
+  }
+
+  .search-input {
+    display: block;
+  }
+
+  .search-input a.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-input a > .icon {
+   margin-right: 8px;
   }
 }
 
