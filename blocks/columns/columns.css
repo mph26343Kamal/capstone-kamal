@@ -9,10 +9,12 @@
 
 .columns > div > div {
   order: 1;
+  flex: 1;
 }
 
 .columns > div > .columns-img-col {
   order: 0;
+  flex: 1.5;
 }
 
 .columns > div > .columns-img-col img {
@@ -21,9 +23,16 @@
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
-    flex-direction: unset;
+    background-color: #ebebeb;
     gap: 24px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    display: -webkit-box;
+    display: flexbox;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    margin-bottom: 1em;
+    width: 100%;
   }
 
   .columns > div > div {
