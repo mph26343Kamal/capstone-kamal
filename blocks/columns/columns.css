@@ -9,7 +9,7 @@
 
 .columns > div > div {
   order: 1;
-  flex: 1
+  flex: 1;
 }
 
 .columns > div > .columns-img-col {
@@ -25,12 +25,11 @@
   .columns > div {
     background-color: #ebebeb;
     gap: 24px;
-        -webkit-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-;
+    display: flex;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     -ms-flex-wrap: wrap;

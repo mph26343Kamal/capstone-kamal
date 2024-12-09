@@ -99,8 +99,8 @@ footer .footer {
   visibility: hidden;
 }
 
-header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
+header .header[data-block-status='loaded'],
+footer .footer[data-block-status='loaded'] {
   visibility: visible;
 }
 
@@ -118,12 +118,24 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
 
 p,
 dl,
@@ -148,7 +160,7 @@ pre {
   white-space: pre;
 }
 
-main{
+main {
   margin-top: 100px;
 }
 
@@ -197,7 +209,6 @@ button {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
 
 button:disabled,
 button:disabled:hover {
@@ -258,23 +269,23 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-.recent-articles h2::after{
+.recent-articles h2::after {
   border-bottom: 2px solid var(--brand-primary);
-  content: "";
+  content: '';
   display: block;
   padding-top: 8px;
   width: 84px;
 }
 
-.nav-sign-up{
+.nav-sign-up {
   width: 100%;
   background-color: var(--dark-background-color);
-    color: #f7f7f7;
-    font-size: var(--body-font-size-xs);
-    min-height: 25px;
-    font-weight: 400;
+  color: #f7f7f7;
+  font-size: var(--body-font-size-xs);
+  min-height: 25px;
+  font-weight: 400;
 }
 
-u{
+u {
   text-decoration: none;
 }

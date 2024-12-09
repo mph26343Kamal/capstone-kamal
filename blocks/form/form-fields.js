@@ -24,7 +24,10 @@ function createLabel(fd) {
   label.id = generateFieldId(fd, '-label');
   label.textContent = fd.Label || fd.Name;
   label.setAttribute('for', fd.Id);
-  if (fd.Mandatory.toLowerCase() === 'true' || fd.Mandatory.toLowerCase() === 'x') {
+  if (
+    fd.Mandatory.toLowerCase() === 'true'
+    || fd.Mandatory.toLowerCase() === 'x'
+  ) {
     label.dataset.required = true;
   }
   return label;
@@ -33,7 +36,9 @@ function createLabel(fd) {
 function setCommonAttributes(field, fd) {
   field.id = fd.Id;
   field.name = fd.Name;
-  field.required = fd.Mandatory && (fd.Mandatory.toLowerCase() === 'true' || fd.Mandatory.toLowerCase() === 'x');
+  field.required = fd.Mandatory
+    && (fd.Mandatory.toLowerCase() === 'true'
+      || fd.Mandatory.toLowerCase() === 'x');
   field.placeholder = fd.Placeholder;
   field.value = fd.Value;
 }

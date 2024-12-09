@@ -6,8 +6,6 @@ header .nav-wrapper {
   position: fixed;
 }
 
-
-
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -31,7 +29,6 @@ header nav[aria-expanded='true'] {
   overflow-y: auto;
   min-height: 100dvh;
 }
-
 
 @media (width >= 900px) {
   header nav {
@@ -237,7 +234,13 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+  header
+    nav
+    .nav-sections
+    .default-content-wrapper
+    > ul
+    > li[aria-expanded='true']
+    > ul {
     display: block;
     position: absolute;
     left: -24px;
@@ -270,7 +273,7 @@ header nav .nav-tools {
   grid-area: tools;
 }
 
-.default-content-wrapper > ul >  li a{
+.default-content-wrapper > ul > li a {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
@@ -287,26 +290,7 @@ header nav .nav-tools {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.default-content-wrapper > ul >  li a:active{
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  border: 2px solid transparent;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
-  font-style: normal;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--brand-primary);
-  color: var(--text-color);
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.default-content-wrapper > ul >  li a:hover{
+.default-content-wrapper > ul > li a:active {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
@@ -325,7 +309,26 @@ header nav .nav-tools {
   white-space: nowrap;
 }
 
-.sign-up-nav{
+.default-content-wrapper > ul > li a:hover {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid transparent;
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--brand-primary);
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sign-up-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -336,6 +339,6 @@ header nav .nav-tools {
   margin-bottom: 1rem;
   font-size: var(--body-font-size-xs);
 }
-.sign-up-link{
+.sign-up-link {
   margin: 0 60px;
 }

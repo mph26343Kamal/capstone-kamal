@@ -8,7 +8,9 @@ async function createForm(formHref, submitHref) {
   const form = document.createElement('form');
   form.dataset.action = submitHref;
 
-  const fields = await Promise.all(json.data.map((fd) => createField(fd, form)));
+  const fields = await Promise.all(
+    json.data.map((fd) => createField(fd, form)),
+  );
   fields.forEach((field) => {
     if (field) {
       form.append(field);
@@ -18,9 +20,11 @@ async function createForm(formHref, submitHref) {
   // group fields into fieldsets
   const fieldsets = form.querySelectorAll('fieldset');
   fieldsets.forEach((fieldset) => {
-    form.querySelectorAll(`[data-fieldset="${fieldset.name}"`).forEach((field) => {
-      fieldset.append(field);
-    });
+    form
+      .querySelectorAll(`[data-fieldset="${fieldset.name}"`)
+      .forEach((field) => {
+        fieldset.append(field);
+      });
   });
 
   return form;
@@ -34,7 +38,11 @@ function generatePayload(form) {
       if (field.type === 'radio') {
         if (field.checked) payload[field.name] = field.value;
       } else if (field.type === 'checkbox') {
-        if (field.checked) payload[field.name] = payload[field.name] ? `${payload[field.name]},${field.value}` : field.value;
+        if (field.checked) {
+          payload[field.name] = payload[field.name]
+            ? `${payload[field.name]},${field.value}`
+            : field.value;
+        }
       } else {
         payload[field.name] = field.value;
       }
@@ -79,7 +87,9 @@ async function handleSubmit(form) {
 
 export default async function decorate(block) {
   const links = [...block.querySelectorAll('a')].map((a) => a.href);
-  const formLink = links.find((link) => link.startsWith(window.location.origin) && link.endsWith('.json'));
+  const formLink = links.find(
+    (link) => link.startsWith(window.location.origin) && link.endsWith('.json'),
+  );
   const submitLink = links.find((link) => link !== formLink);
   if (!formLink || !submitLink) return;
 

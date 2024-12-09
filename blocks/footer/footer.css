@@ -6,7 +6,7 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer>div {
+footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 12px 24px 24px;
@@ -17,24 +17,23 @@ footer .footer p {
 }
 
 @media (width >=900px) {
-  footer .footer>div {
+  footer .footer > div {
     padding: 10px 32px 24px;
   }
 }
-.social img{
+.social img {
   padding: 10px;
   width: 27px;
-  background-color:#fff;
-  
+  background-color: #fff;
 }
-.social .socialicon{
+.social .socialicon {
   position: absolute;
   right: 35px;
   margin-top: -30px;
 }
-.socialicon{
+.socialicon {
   margin-bottom: 20px;
 }
-.high-form{
+.high-form {
   padding-top: 53px;
 }
