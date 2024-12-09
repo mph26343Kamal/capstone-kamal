@@ -6,6 +6,12 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
+.wknd-nav > div{
+  display: flex;
+  align-items: center;
+
+}
+
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
@@ -22,22 +28,23 @@ footer .footer p {
   }
 }
 
-.social img {
-  padding: 10px;
-  width: 27px;
-  background-color: #fff;
+.wknd-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.socialicon {
-  margin-bottom: 20px;
+.wknd-nav > div ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-.social .socialicon {
-  position: absolute;
-  right: 35px;
-  margin-top: -30px;
+.wknd-nav > div ul > li  a {
+  text-decoration: none;
+  color: var(--light-color)
 }
-
 
 .high-form {
   padding-top: 53px;
